@@ -1,4 +1,5 @@
 import Button from './Button'
+import { MdHome } from 'react-icons/md'
 
 function ButtonExample() {
   return (
@@ -59,6 +60,52 @@ function ButtonExample() {
           </Button>
           <Button disabled bordered variant="error">
             Error
+          </Button>
+        </div>
+
+        <h2 className="mt-4 text-lg font-bold">With Icons</h2>
+        <div className="mt-3 flex items-center justify-start gap-4">
+          <Button variant="primary">
+            <MdHome className="text-[1.4em] mr-1" />
+            Primary
+          </Button>
+          <Button variant="secondary">
+            <MdHome className="text-[1.4em] mr-1" />
+            Secondary
+          </Button>
+          <Button variant="success">
+            <MdHome className="text-[1.4em] mr-1" />
+            Success
+          </Button>
+          <Button variant="warning">
+            <MdHome className="text-[1.4em] mr-1" />
+            Warning
+          </Button>
+          <Button variant="error">
+            <MdHome className="text-[1.4em] mr-1" />
+            Error
+          </Button>
+        </div>
+        <div className="mt-3 flex items-center justify-start gap-4">
+          <Button variant="primary">
+            Primary
+            <MdHome className="text-[1.4em] ml-1" />
+          </Button>
+          <Button variant="secondary">
+            Secondary
+            <MdHome className="text-[1.4em] ml-1" />
+          </Button>
+          <Button variant="success">
+            Success
+            <MdHome className="text-[1.4em] ml-1" />
+          </Button>
+          <Button variant="warning">
+            Warning
+            <MdHome className="text-[1.4em] ml-1" />
+          </Button>
+          <Button variant="error">
+            Error
+            <MdHome className="text-[1.4em] ml-1" />
           </Button>
         </div>
 
@@ -162,6 +209,13 @@ function ButtonExample() {
           </Button>
           <Button loading size="xl">
             Error
+          </Button>
+        </div>
+
+        <h2 className="mt-4 text-lg font-bold">Block</h2>
+        <div className="mt-3 flex items-center justify-start gap-4">
+          <Button variant="primary" block>
+            Primary
           </Button>
         </div>
       </div>

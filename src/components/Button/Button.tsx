@@ -10,6 +10,7 @@ interface Props {
   bordered?: boolean
   rounded?: boolean
   loading?: boolean
+  block?: boolean
 }
 
 type NativeAttrs = Omit<React.ButtonHTMLAttributes<unknown>, keyof Props>
@@ -27,6 +28,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(function (
     as = 'button',
     disabled,
     loading,
+    block,
     ...rest
   },
   ref: React.Ref<HTMLButtonElement | null>,
@@ -42,6 +44,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(function (
     [styles[`btn_bordered_${variant}`]]: bordered,
     [styles[`btn_rounded`]]: rounded,
     [styles[`btn_disabled`]]: disabled,
+    [styles[`btn_block`]]: block,
   })
 
   let childrenUi

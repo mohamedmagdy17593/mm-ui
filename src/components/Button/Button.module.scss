@@ -1,5 +1,5 @@
 .btn {
-  @apply cursor-pointer inline-flex items-center font-medium border border-transparent shadow-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2;
+  @apply cursor-pointer inline-flex items-center justify-center font-medium border border-transparent shadow-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2;
 }
 
 // Variants
@@ -88,4 +88,8 @@
 
 .btn_disabled {
   @apply cursor-not-allowed opacity-60;
+}
+
+.btn_block {
+  @apply w-full text-center;
 }
