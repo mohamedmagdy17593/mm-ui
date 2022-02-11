@@ -1,0 +1,91 @@
+.btn {
+  @apply cursor-pointer inline-flex items-center font-medium border border-transparent shadow-sm text-white focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+// Variants
+.btn_primary {
+  @apply bg-sky-600 hover:bg-sky-700 focus:ring-sky-500;
+  &.btn_disabled {
+    @apply hover:bg-sky-600;
+  }
+}
+.btn_secondary {
+  @apply bg-fuchsia-600 hover:bg-fuchsia-700 focus:ring-fuchsia-500;
+  &.btn_disabled {
+    @apply hover:bg-fuchsia-600;
+  }
+}
+.btn_success {
+  @apply bg-teal-600 hover:bg-teal-700 focus:ring-teal-500;
+  &.btn_disabled {
+    @apply hover:bg-teal-600;
+  }
+}
+.btn_warning {
+  @apply bg-yellow-500 hover:bg-yellow-600 focus:ring-yellow-400;
+  &.btn_disabled {
+    @apply hover:bg-yellow-500;
+  }
+}
+.btn_error {
+  @apply bg-red-600 hover:bg-red-700 focus:ring-red-500;
+  &.btn_disabled {
+    @apply hover:bg-red-600;
+  }
+}
+// Variants with border
+.btn_bordered_primary {
+  @apply bg-transparent text-sky-600 border-sky-600 hover:text-white hover:border-sky-700 hover:bg-sky-700 focus:ring-sky-500;
+  &.btn_disabled {
+    @apply hover:text-sky-600 hover:border-sky-600 hover:bg-transparent;
+  }
+}
+.btn_bordered_secondary {
+  @apply bg-transparent text-fuchsia-600 border-fuchsia-600 hover:text-white hover:border-fuchsia-700 hover:bg-fuchsia-700 focus:ring-fuchsia-500;
+  &.btn_disabled {
+    @apply hover:text-fuchsia-600 hover:border-fuchsia-600 hover:bg-transparent;
+  }
+}
+.btn_bordered_success {
+  @apply bg-transparent text-teal-600 border-teal-600 hover:text-white hover:border-teal-700 hover:bg-teal-700 focus:ring-teal-500;
+  &.btn_disabled {
+    @apply hover:text-teal-600 hover:border-teal-600 hover:bg-transparent;
+  }
+}
+.btn_bordered_warning {
+  @apply bg-transparent text-yellow-500 border-yellow-500 hover:text-white hover:border-yellow-600 hover:bg-yellow-600 focus:ring-yellow-400;
+  &.btn_disabled {
+    @apply hover:text-yellow-500 hover:border-yellow-500 hover:bg-transparent;
+  }
+}
+.btn_bordered_error {
+  @apply bg-transparent text-red-600 border-red-600 hover:text-white hover:border-red-700 hover:bg-red-700 focus:ring-red-500;
+  &.btn_disabled {
+    @apply hover:text-red-600 hover:border-red-600 hover:bg-transparent;
+  }
+}
+
+// Sizes
+.btn_xs {
+  @apply px-2.5 py-1.5 text-xs rounded;
+}
+.btn_sm {
+  @apply px-3 py-2 text-xs rounded-md;
+}
+.btn_md {
+  @apply px-4 py-2 text-sm rounded-md;
+}
+.btn_lg {
+  @apply px-5 py-2.5 text-base rounded-lg;
+}
+.btn_xl {
+  @apply px-6 py-3 text-base rounded-lg;
+}
+
+.btn_rounded {
+  @apply rounded-full;
+}
+
+.btn_disabled {
+  @apply cursor-not-allowed opacity-60;
+}

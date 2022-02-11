@@ -1,11 +1,9 @@
-import Button from './components/Button/Button'
+import ButtonExample from './components/Button/ButtonExample'
 
 function App() {
   return (
-    <div className="flex justify-center">
-      <h1 className="font-bold text-2xl text-blue-900">
-        <Button>Click</Button>
-      </h1>
+    <div className="p-4">
+      <ButtonExample />
     </div>
   )
 }
