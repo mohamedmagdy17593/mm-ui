@@ -4,7 +4,7 @@ import { MdHome } from 'react-icons/md'
 function ButtonExample() {
   return (
     <div>
-      <h1 className="text-2xl">Buttons</h1>
+      <h1 className="text-4xl">Buttons</h1>
 
       <div className="ml-4">
         <h2 className="mt-4 text-lg font-bold">Sizes</h2>

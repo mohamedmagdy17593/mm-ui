@@ -33,6 +33,7 @@
     @apply hover:bg-red-600;
   }
 }
+
 // Variants with border
 .btn_bordered_primary {
   @apply bg-transparent text-sky-600 border-sky-600 hover:text-white hover:border-sky-700 hover:bg-sky-700 focus:ring-sky-500;
