@@ -1,5 +1,6 @@
 import ButtonExample from './components/Button/ButtonExample'
 import InputExample from './components/Input/InputExample'
+import SelectExample from './components/Select/SelectExample'
 
 function App() {
   return (
@@ -7,6 +8,8 @@ function App() {
       <ButtonExample />
 
       <InputExample />
+
+      <SelectExample />
     </div>
   )
 }
