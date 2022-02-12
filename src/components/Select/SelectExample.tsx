@@ -12,7 +12,7 @@ function SelectExample() {
       <h1 className="text-4xl">Selects</h1>
 
       <div className="ml-4">
-        <h2 className="mt-4 text-lg font-bold">Select</h2>
+        <h2 className="mt-16 text-lg font-bold">Select</h2>
         <div className="mt-3 flex flex-col gap-4">
           <Select
             value={value}
@@ -27,7 +27,7 @@ function SelectExample() {
           ></Select>
         </div>
 
-        <h2 className="mt-4 text-lg font-bold">Select with loading</h2>
+        <h2 className="mt-16 text-lg font-bold">Select with loading</h2>
         <div className="mt-3 flex flex-col gap-4">
           <Select
             loading

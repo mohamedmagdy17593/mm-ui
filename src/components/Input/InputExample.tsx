@@ -9,7 +9,7 @@ function InputExample() {
       <h1 className="text-4xl">Inputs</h1>
 
       <div className="ml-4">
-        <h2 className="mt-4 text-lg font-bold">Sizes</h2>
+        <h2 className="mt-16 text-lg font-bold">Sizes</h2>
         <div className="mt-3 flex flex-col gap-4">
           <Input placeholder="Default" />
           <Input size="xs" placeholder="xs" />
@@ -19,7 +19,7 @@ function InputExample() {
           <Input size="xl" placeholder="xl" />
         </div>
 
-        <h2 className="mt-4 text-lg font-bold">With label</h2>
+        <h2 className="mt-16 text-lg font-bold">With label</h2>
         <div className="mt-3 flex flex-col gap-4">
           <div>
             <label htmlFor="email" className="block text-sm text-neutral-700">
@@ -35,7 +35,7 @@ function InputExample() {
           </div>
         </div>
 
-        <h2 className="mt-4 text-lg font-bold">Password Input</h2>
+        <h2 className="mt-16 text-lg font-bold">Password Input</h2>
         <div className="mt-3 flex flex-col gap-4">
           <div>
             <label
@@ -50,28 +50,28 @@ function InputExample() {
           </div>
         </div>
 
-        <h2 className="mt-4 text-lg font-bold">With Icons</h2>
+        <h2 className="mt-16 text-lg font-bold">With Icons</h2>
         <div className="mt-3 flex flex-col gap-4">
           <Input placeholder="With icon" rightIcon={<MdHome />} />
           <Input placeholder="With icon" leftIcon={<MdHome />} />
         </div>
 
-        <h2 className="mt-4 text-lg font-bold">With loading</h2>
+        <h2 className="mt-16 text-lg font-bold">With loading</h2>
         <div className="mt-3 flex flex-col gap-4">
           <Input placeholder="loading" loading />
         </div>
 
-        <h2 className="mt-4 text-lg font-bold">Disabled</h2>
+        <h2 className="mt-16 text-lg font-bold">Disabled</h2>
         <div className="mt-3 flex flex-col gap-4">
           <Input placeholder="Disabled" disabled />
         </div>
 
-        <h2 className="mt-4 text-lg font-bold">With Error</h2>
+        <h2 className="mt-16 text-lg font-bold">With Error</h2>
         <div className="mt-3 flex flex-col gap-4">
           <Input placeholder="Error" error />
         </div>
 
-        <h2 className="mt-4 text-lg font-bold">With helpers and errors</h2>
+        <h2 className="mt-16 text-lg font-bold">With helpers and errors</h2>
         <div className="mt-3 flex flex-col gap-4">
           <div>
             <label htmlFor="email" className="block text-sm text-neutral-700">
@@ -108,7 +108,9 @@ function InputExample() {
           </div>
         </div>
 
-        <h2 className="mt-4 text-lg font-bold">With Input group with button</h2>
+        <h2 className="mt-16 text-lg font-bold">
+          With Input group with button
+        </h2>
         <div className="mt-3 flex flex-col gap-4">
           <div>
             <label htmlFor="search" className="block text-sm text-neutral-700">

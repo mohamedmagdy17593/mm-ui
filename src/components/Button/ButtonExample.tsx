@@ -7,7 +7,7 @@ function ButtonExample() {
       <h1 className="text-4xl">Buttons</h1>
 
       <div className="ml-4">
-        <h2 className="mt-4 text-lg font-bold">Sizes</h2>
+        <h2 className="mt-16 text-lg font-bold">Sizes</h2>
         <div className="mt-3 flex items-center justify-start gap-4">
           <Button>Default</Button>
           <Button size="xs">Size xs</Button>
@@ -17,7 +17,7 @@ function ButtonExample() {
           <Button size="xl">Size xl</Button>
         </div>
 
-        <h2 className="mt-4 text-lg font-bold">Variants</h2>
+        <h2 className="mt-16 text-lg font-bold">Variants</h2>
         <div className="mt-3 flex items-center justify-start gap-4">
           <Button>Default</Button>
           <Button variant="primary">Primary</Button>
@@ -27,7 +27,7 @@ function ButtonExample() {
           <Button variant="error">Error</Button>
         </div>
 
-        <h2 className="mt-4 text-lg font-bold">Disabled</h2>
+        <h2 className="mt-16 text-lg font-bold">Disabled</h2>
         <div className="mt-3 flex items-center justify-start gap-4">
           <Button disabled variant="primary">
             Primary
@@ -63,7 +63,7 @@ function ButtonExample() {
           </Button>
         </div>
 
-        <h2 className="mt-4 text-lg font-bold">With Icons</h2>
+        <h2 className="mt-16 text-lg font-bold">With Icons</h2>
         <div className="mt-3 flex items-center justify-start gap-4">
           <Button variant="primary">
             <MdHome className="text-[1.4em] mr-1" />
@@ -109,14 +109,14 @@ function ButtonExample() {
           </Button>
         </div>
 
-        <h2 className="mt-4 text-lg font-bold">With custom classes</h2>
+        <h2 className="mt-16 text-lg font-bold">With custom classes</h2>
         <div className="mt-3 flex items-center justify-start gap-4">
           <Button className="bg-black hover:bg-gray-300 hover:text-black">
             Click
           </Button>
         </div>
 
-        <h2 className="mt-4 text-lg font-bold">bordered</h2>
+        <h2 className="mt-16 text-lg font-bold">bordered</h2>
         <div className="mt-3 flex items-center justify-start gap-4">
           <Button bordered variant="primary">
             Primary
@@ -135,7 +135,7 @@ function ButtonExample() {
           </Button>
         </div>
 
-        <h2 className="mt-4 text-lg font-bold">Rounded</h2>
+        <h2 className="mt-16 text-lg font-bold">Rounded</h2>
         <div className="mt-3 flex items-center justify-start gap-4">
           <Button rounded variant="primary">
             Primary
@@ -171,12 +171,12 @@ function ButtonExample() {
           </Button>
         </div>
 
-        <h2 className="mt-4 text-lg font-bold">As link</h2>
+        <h2 className="mt-16 text-lg font-bold">As link</h2>
         <div className="mt-3 flex items-center justify-start gap-4">
           <Button as="a">This is link</Button>
         </div>
 
-        <h2 className="mt-4 text-lg font-bold">Loading</h2>
+        <h2 className="mt-16 text-lg font-bold">Loading</h2>
         <div className="mt-3 flex items-center justify-start gap-4">
           <Button loading variant="primary">
             Primary
@@ -212,7 +212,7 @@ function ButtonExample() {
           </Button>
         </div>
 
-        <h2 className="mt-4 text-lg font-bold">Block</h2>
+        <h2 className="mt-16 text-lg font-bold">Block</h2>
         <div className="mt-3 flex items-center justify-start gap-4">
           <Button variant="primary" block>
             Primary
