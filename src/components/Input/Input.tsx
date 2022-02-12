@@ -1,9 +1,9 @@
-import React, { useImperativeHandle, useRef } from 'react'
+import React from 'react'
 import clsx from 'clsx'
 import styles from './Input.module.scss'
 import { CgSpinner } from 'react-icons/cg'
 
-interface Props {
+export interface Props {
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
   error?: boolean
   rightIcon?: React.ReactNode
@@ -11,9 +11,9 @@ interface Props {
   loading?: React.ReactNode
 }
 
-type NativeAttrs = Omit<React.InputHTMLAttributes<unknown>, keyof Props>
+export type NativeAttrs = Omit<React.InputHTMLAttributes<unknown>, keyof Props>
 
-type InputProps = React.PropsWithChildren<NativeAttrs & Props>
+export type InputProps = React.PropsWithChildren<NativeAttrs & Props>
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(function (
   {

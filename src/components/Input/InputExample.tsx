@@ -1,10 +1,12 @@
 import Input from './Input'
-import { MdHome, MdError } from 'react-icons/md'
+import { MdHome, MdError, MdSearch, MdSort } from 'react-icons/md'
+import Button from '../Button/Button'
+import InputPassword from './InputPassword'
 
 function InputExample() {
   return (
     <div>
-      <h1 className="text-4xl">Input</h1>
+      <h1 className="text-4xl">Inputs</h1>
 
       <div className="ml-4">
         <h2 className="mt-4 text-lg font-bold">Sizes</h2>
@@ -29,6 +31,21 @@ function InputExample() {
                 id="email"
                 type="email"
               />
+            </div>
+          </div>
+        </div>
+
+        <h2 className="mt-4 text-lg font-bold">Password Input</h2>
+        <div className="mt-3 flex flex-col gap-4">
+          <div>
+            <label
+              htmlFor="password"
+              className="block text-sm text-neutral-700"
+            >
+              Password
+            </label>
+            <div className="mt-1">
+              <InputPassword id="password" />
             </div>
           </div>
         </div>
@@ -72,7 +89,6 @@ function InputExample() {
             </div>
           </div>
         </div>
-
         <div className="mt-3 flex flex-col gap-4">
           <div>
             <label htmlFor="email" className="block text-sm text-red-500">
@@ -89,6 +105,27 @@ function InputExample() {
               />
             </div>
             <div className="text-sm mt-1 text-red-500">Error message</div>
+          </div>
+        </div>
+
+        <h2 className="mt-4 text-lg font-bold">With Input group with button</h2>
+        <div className="mt-3 flex flex-col gap-4">
+          <div>
+            <label htmlFor="search" className="block text-sm text-neutral-700">
+              Search
+            </label>
+            <div className="mt-1 grid grid-cols-[1fr,auto]">
+              <Input
+                placeholder="search"
+                id="search"
+                leftIcon={<MdSearch className="text-neutral-400" />}
+                className="rounded-r-none border-r-0 focus:z-10"
+              />
+              <Button className="rounded-l-none focus:z-10">
+                <MdSort className="text-[1.4em] mr-1" />
+                Sort
+              </Button>
+            </div>
           </div>
         </div>
       </div>
