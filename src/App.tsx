@@ -1,6 +1,7 @@
 import ButtonExample from './components/Button/ButtonExample'
 import InputExample from './components/Input/InputExample'
 import SelectExample from './components/Select/SelectExample'
+import TooltipExample from './components/Tooltip/TooltipExample'
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
       <InputExample />
 
       <SelectExample />
+
+      <TooltipExample />
     </div>
   )
 }
