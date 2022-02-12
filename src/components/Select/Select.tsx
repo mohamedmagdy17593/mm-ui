@@ -17,7 +17,16 @@ export type SelectProps = InputProps & {
 }
 
 const Select = React.forwardRef<HTMLButtonElement, SelectProps>(function (
-  { options, className, value, onChange, disabled, loading, ...rest },
+  {
+    options,
+    className,
+    value,
+    onChange,
+    disabled,
+    loading,
+    placeholder,
+    ...rest
+  },
   ref,
 ) {
   if (loading) {
@@ -25,6 +34,7 @@ const Select = React.forwardRef<HTMLButtonElement, SelectProps>(function (
   }
 
   let selected = options.find((o) => o.value === value)
+  let isPlaceholder = !selected
 
   return (
     <Listbox value={value} onChange={onChange} disabled={disabled}>
@@ -32,7 +42,9 @@ const Select = React.forwardRef<HTMLButtonElement, SelectProps>(function (
         <Input
           // @ts-ignore
           as={Listbox.Button}
-          className={clsx(className, 'text-left')}
+          className={clsx(className, 'text-left', {
+            'text-neutral-400': isPlaceholder,
+          })}
           rightIcon={<HiSelector />}
           loading={loading}
           disabled={disabled}
@@ -40,10 +52,10 @@ const Select = React.forwardRef<HTMLButtonElement, SelectProps>(function (
           ref={ref}
           {...rest}
         >
-          {selected?.label}
+          {isPlaceholder ? placeholder : selected?.label}
         </Input>
 
-        <Listbox.Options className="absolute bg-white mt-1 w-full rounded-md shadow-sm p-1 border border-neutral-300 text-neutral-600 focus:outline-none flex flex-col gap-0.5 z-50">
+        <Listbox.Options className="absolute bg-white mt-1 w-full rounded-md shadow-sm p-1 border border-neutral-300 text-neutral-600 focus:outline-none flex flex-col gap-0.5 z-50 overflow-auto max-h-60">
           {options.map((option) => (
             <Listbox.Option
               className={({ active, selected }) =>
