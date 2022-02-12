@@ -67,6 +67,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(function (
       ...(as === 'button' && { type: 'button' }),
       className: classes,
       disabled,
+      ref: buttonRef,
       ...rest,
     },
     childrenUi,

@@ -4,6 +4,7 @@ import styles from './Input.module.scss'
 import { CgSpinner } from 'react-icons/cg'
 
 export interface Props {
+  as?: keyof JSX.IntrinsicElements
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
   error?: boolean
   rightIcon?: React.ReactNode
@@ -17,6 +18,7 @@ export type InputProps = React.PropsWithChildren<NativeAttrs & Props>
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(function (
   {
+    as = 'input',
     children,
     className,
     size = 'md',
@@ -43,14 +45,16 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(function (
 
   let hasIcon = leftIcon || rightIcon
 
-  let inputUi = (
-    <input
-      type="text"
-      disabled={disabled}
-      className={classes}
-      {...rest}
-      ref={ref}
-    ></input>
+  let inputUi = React.createElement(
+    as,
+    {
+      ...(as === 'input' && { type: 'text' }),
+      className: classes,
+      disabled,
+      ref,
+      ...rest,
+    },
+    children,
   )
 
   if (hasIcon) {
