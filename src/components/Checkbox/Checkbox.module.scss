@@ -1,0 +1,68 @@
+.checkbox {
+  @apply form-checkbox border-neutral-300 focus:ring-sky-500 checked:text-sky-500;
+}
+
+.checkbox_sm {
+  @apply h-4 w-4 rounded-sm;
+}
+.checkbox_md {
+  @apply h-5 w-5 rounded-md;
+}
+.checkbox_lg {
+  @apply h-8 w-8 rounded-md;
+}
+
+.rounded {
+  @apply rounded-full;
+}
+
+// Variants
+.checkbox_primary {
+  @apply border-neutral-300 focus:ring-sky-500 checked:text-sky-500;
+}
+.checkbox_secondary {
+  @apply border-fuchsia-500 focus:ring-fuchsia-500 checked:text-fuchsia-500;
+}
+.checkbox_success {
+  @apply border-teal-500 focus:ring-teal-500 checked:text-teal-500;
+}
+.checkbox_warning {
+  @apply border-teal-400 focus:ring-teal-400 checked:text-teal-400;
+}
+.checkbox_error {
+  @apply border-red-500 focus:ring-red-500 checked:text-red-500;
+}
+
+.checkbox_disabled {
+  @apply cursor-not-allowed opacity-60;
+}
+
+.label {
+  @apply inline-flex gap-3 items-center text-lg;
+}
+
+.label_sm {
+  @apply text-sm;
+}
+.label_md {
+  @apply text-base;
+}
+.label_lg {
+  @apply text-lg;
+}
+
+.label_primary {
+  @apply text-neutral-600;
+}
+.label_secondary {
+  @apply text-fuchsia-500;
+}
+.label_success {
+  @apply text-teal-500;
+}
+.label_warning {
+  @apply text-teal-400;
+}
+.label_error {
+  @apply text-red-500;
+}

@@ -1,4 +1,5 @@
 import ButtonExample from './components/Button/ButtonExample'
+import CheckboxExample from './components/Checkbox/CheckboxExample'
 import InputExample from './components/Input/InputExample'
 import SelectExample from './components/Select/SelectExample'
 import TooltipExample from './components/Tooltip/TooltipExample'
@@ -13,6 +14,8 @@ function App() {
       <SelectExample />
 
       <TooltipExample />
+
+      <CheckboxExample />
     </div>
   )
 }
