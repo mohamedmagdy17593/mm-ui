@@ -1,0 +1,68 @@
+.switch {
+  @apply relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+// .switch_sm {
+//   @apply h-4 w-4 rounded-sm;
+// }
+// .switch_md {
+//   @apply h-5 w-5 rounded-md;
+// }
+// .switch_lg {
+//   @apply h-8 w-8 rounded-md;
+// }
+
+// .rounded {
+//   @apply rounded-full;
+// }
+
+// // Variants
+.switch_primary {
+  @apply focus:ring-sky-500 bg-sky-500;
+}
+.switch_secondary {
+  @apply focus:ring-fuchsia-500 bg-fuchsia-500;
+}
+.switch_success {
+  @apply focus:ring-teal-500 bg-teal-500;
+}
+.switch_warning {
+  @apply focus:ring-yellow-400 bg-yellow-400;
+}
+.switch_error {
+  @apply focus:ring-red-500 bg-red-500;
+}
+
+.switch_disabled {
+  @apply cursor-not-allowed opacity-60;
+}
+
+.label {
+  @apply inline-flex gap-3 items-center text-lg;
+}
+
+.label_sm {
+  @apply text-sm;
+}
+.label_md {
+  @apply text-base;
+}
+.label_lg {
+  @apply text-lg;
+}
+
+.label_primary {
+  @apply text-neutral-600;
+}
+.label_secondary {
+  @apply text-fuchsia-500;
+}
+.label_success {
+  @apply text-teal-500;
+}
+.label_warning {
+  @apply text-yellow-400;
+}
+.label_error {
+  @apply text-red-500;
+}

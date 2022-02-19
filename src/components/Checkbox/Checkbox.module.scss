@@ -27,7 +27,7 @@
   @apply border-teal-500 focus:ring-teal-500 checked:text-teal-500;
 }
 .checkbox_warning {
-  @apply border-teal-400 focus:ring-teal-400 checked:text-teal-400;
+  @apply border-yellow-400 focus:ring-yellow-400 checked:text-yellow-400;
 }
 .checkbox_error {
   @apply border-red-500 focus:ring-red-500 checked:text-red-500;
@@ -61,7 +61,7 @@
   @apply text-teal-500;
 }
 .label_warning {
-  @apply text-teal-400;
+  @apply text-yellow-400;
 }
 .label_error {
   @apply text-red-500;

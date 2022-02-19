@@ -9,12 +9,20 @@ interface Props {
   label?: React.ReactNode
 }
 
-type NativeAttrs = Omit<React.InputHTMLAttributes<unknown>, keyof Props>
+type NativeAttrs = Omit<React.ButtonHTMLAttributes<unknown>, keyof Props>
 
 type CheckboxProps = React.PropsWithChildren<NativeAttrs & Props>
 
 const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(function (
-  { className, variant, size = 'md', disabled, rounded, label, ...rest },
+  {
+    className,
+    variant = 'primary',
+    size = 'md',
+    disabled,
+    rounded,
+    label,
+    ...rest
+  },
   ref,
 ) {
   let classes = clsx(
