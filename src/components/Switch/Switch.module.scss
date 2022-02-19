@@ -1,20 +1,16 @@
 .switch {
-  @apply relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  @apply relative inline-flex flex-shrink-0 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
 }
 
-// .switch_sm {
-//   @apply h-4 w-4 rounded-sm;
-// }
-// .switch_md {
-//   @apply h-5 w-5 rounded-md;
-// }
-// .switch_lg {
-//   @apply h-8 w-8 rounded-md;
-// }
-
-// .rounded {
-//   @apply rounded-full;
-// }
+.switch_sm {
+  @apply h-4 w-7;
+}
+.switch_md {
+  @apply h-6 w-11;
+}
+.switch_lg {
+  @apply h-8 w-14;
+}
 
 // // Variants
 .switch_primary {
@@ -35,6 +31,29 @@
 
 .switch_disabled {
   @apply cursor-not-allowed opacity-60;
+}
+
+.switch_handle {
+  @apply pointer-events-none inline-block rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200;
+}
+
+.switch_handle_sm {
+  @apply h-3 w-3;
+  &.switch_handle_sm_translate {
+    @apply translate-x-3;
+  }
+}
+.switch_handle_md {
+  @apply h-5 w-5;
+  &.switch_handle_md_translate {
+    @apply translate-x-5;
+  }
+}
+.switch_handle_lg {
+  @apply h-7 w-7;
+  &.switch_handle_lg_translate {
+    @apply translate-x-6;
+  }
 }
 
 .label {

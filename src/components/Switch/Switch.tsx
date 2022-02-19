@@ -42,7 +42,7 @@ const Switch = React.forwardRef<HTMLButtonElement, CheckboxProps>(function (
   let classes = clsx(
     className,
     styles.switch,
-    // styles[`switch_${size}`],
+    styles[`switch_${size}`],
     checked ? styles[`switch_${variant}`] : 'bg-neutral-300',
     {
       [styles[`switch_disabled`]]: !label && disabled,
@@ -59,12 +59,13 @@ const Switch = React.forwardRef<HTMLButtonElement, CheckboxProps>(function (
       ref={ref}
       {...rest}
     >
-      <span className="sr-only">Use setting</span>
+      {label && <span className="sr-only">{label}</span>}
       <span
         aria-hidden="true"
         className={clsx(
-          checked ? 'translate-x-5' : 'translate-x-0',
-          'pointer-events-none inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200 ',
+          styles[`switch_handle`],
+          styles[`switch_handle_${size}`],
+          checked ? styles[`switch_handle_${size}_translate`] : 'translate-x-0',
         )}
       />
     </HeadlessSwitch>

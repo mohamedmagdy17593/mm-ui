@@ -33,6 +33,7 @@ const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(function (
     {
       [styles.rounded]: rounded,
       [styles[`checkbox_disabled`]]: !label && disabled,
+      'cursor-not-allowed': disabled,
     },
   )
 
