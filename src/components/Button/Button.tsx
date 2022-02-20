@@ -4,7 +4,7 @@ import styles from './Button.module.scss'
 import { CgSpinner } from 'react-icons/cg'
 
 interface Props {
-  as?: keyof JSX.IntrinsicElements
+  as?: keyof JSX.IntrinsicElements | React.ElementType
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
   variant?: 'primary' | 'secondary' | 'success' | 'warning' | 'error'
   bordered?: boolean

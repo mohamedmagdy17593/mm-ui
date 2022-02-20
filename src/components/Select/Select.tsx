@@ -55,12 +55,12 @@ const Select = React.forwardRef<HTMLButtonElement, SelectProps>(function (
           {isPlaceholder ? placeholder : selected?.label}
         </Input>
 
-        <Listbox.Options className="absolute bg-white mt-1 w-full rounded-md shadow-sm p-1 border border-neutral-300 text-neutral-600 focus:outline-none flex flex-col gap-0.5 z-50 overflow-auto max-h-60">
+        <Listbox.Options className="absolute bg-white mt-1 w-full rounded-md shadow-sm p-1 border border-neutral-200 text-neutral-600 focus:outline-none flex flex-col gap-0.5 z-50 overflow-auto max-h-60">
           {options.map((option) => (
             <Listbox.Option
               className={({ active, selected }) =>
                 clsx(
-                  'cursor-pointer text-sm px-2 py-1 rounded border-neutral-300 ',
+                  'cursor-pointer text-sm px-2 py-1 rounded border-neutral-200 ',
                   {
                     'bg-cyan-100 text-cyan-900': active && !selected,
                     'bg-cyan-600 text-white': selected,

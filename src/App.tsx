@@ -4,6 +4,7 @@ import InputExample from './components/Input/InputExample'
 import SelectExample from './components/Select/SelectExample'
 import SwitchExample from './components/Switch/SwitchExample'
 import TooltipExample from './components/Tooltip/TooltipExample'
+import DropdownExample from './components/Dropdown/DropdownExample'
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
       <CheckboxExample />
 
       <SwitchExample />
+
+      <DropdownExample />
     </div>
   )
 }
