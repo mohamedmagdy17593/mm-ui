@@ -40,7 +40,6 @@ const Select = React.forwardRef<HTMLButtonElement, SelectProps>(function (
     <Listbox value={value} onChange={onChange} disabled={disabled}>
       <div className="relative">
         <Input
-          // @ts-ignore
           as={Listbox.Button}
           className={clsx(className, 'text-left', {
             'text-neutral-400': isPlaceholder,

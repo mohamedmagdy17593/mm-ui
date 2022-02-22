@@ -4,7 +4,7 @@ import styles from './Input.module.scss'
 import { CgSpinner } from 'react-icons/cg'
 
 export interface Props {
-  as?: keyof JSX.IntrinsicElements
+  as?: keyof JSX.IntrinsicElements | React.ElementType
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
   error?: boolean
   rightIcon?: React.ReactNode
