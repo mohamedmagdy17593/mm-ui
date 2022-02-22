@@ -5,6 +5,7 @@ import SelectExample from './components/Select/SelectExample'
 import SwitchExample from './components/Switch/SwitchExample'
 import TooltipExample from './components/Tooltip/TooltipExample'
 import DropdownExample from './components/Dropdown/DropdownExample'
+import ModalExample from './components/Modal/ModalExample'
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
       <SwitchExample />
 
       <DropdownExample />
+
+      <ModalExample />
     </div>
   )
 }
