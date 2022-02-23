@@ -13,7 +13,7 @@ function ModalExample() {
 
   return (
     <div>
-      <h1 className="text-4xl">Tooltips</h1>
+      <h1 className="text-4xl">Modals</h1>
 
       <div className="ml-4">
         <h2 className="mt-16 text-lg font-bold">Modal</h2>
