@@ -1,0 +1,23 @@
+.datePicker {
+  @apply border-neutral-200 shadow;
+
+  :global(.react-datepicker__triangle) {
+    display: none !important;
+  }
+
+  :global(.react-datepicker__navigation) {
+    top: 8px;
+  }
+
+  :global(.react-datepicker__header) {
+    @apply bg-neutral-50 border-b-neutral-200;
+  }
+  :global(.react-datepicker__header) {
+    @apply bg-neutral-50 border-b-neutral-200;
+  }
+
+  :global(.react-datepicker__day--selected),
+  :global(.react-datepicker__day--keyboard-selected) {
+    @apply bg-cyan-500;
+  }
+}
