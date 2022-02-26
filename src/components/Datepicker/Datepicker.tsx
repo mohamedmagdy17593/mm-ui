@@ -5,7 +5,7 @@ import ReactDatePicker from 'react-datepicker'
 import Input, { InputProps } from '../Input/Input'
 import styles from './Datepicker.module.scss'
 
-type DatePickerProps = React.PropsWithChildren<{ inputProps: InputProps }>
+type DatePickerProps = React.PropsWithChildren<{ inputProps?: InputProps }>
 
 function DatePicker({ children, inputProps }: DatePickerProps) {
   const [startDate, setStartDate] = useState<Date | null>(new Date())
