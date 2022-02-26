@@ -8,6 +8,7 @@ import DropdownExample from './components/Dropdown/DropdownExample'
 import ModalExample from './components/Modal/ModalExample'
 import TabsExample from './components/Tabs/TabsExample'
 import DatePickerExample from './components/Datepicker/DatepickerExample'
+import TableExample from './components/Table/TableExample'
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
       <TabsExample />
 
       <DatePickerExample />
+
+      <TableExample />
     </div>
   )
 }
