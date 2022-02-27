@@ -9,6 +9,7 @@ import ModalExample from './components/Modal/ModalExample'
 import TabsExample from './components/Tabs/TabsExample'
 import DatePickerExample from './components/Datepicker/DatepickerExample'
 import TableExample from './components/Table/TableExample'
+import RadioGroupExample from './components/RadioGroup/RadioGroupExample'
 
 function App() {
   return (
@@ -34,6 +35,8 @@ function App() {
       <DatePickerExample />
 
       <TableExample />
+
+      <RadioGroupExample />
     </div>
   )
 }

@@ -7,7 +7,7 @@ import { HiSelector } from 'react-icons/hi'
 export interface Option {
   value: any
   label: React.ReactNode
-  disabled: boolean
+  disabled?: boolean
 }
 
 export type SelectProps = InputProps & {
